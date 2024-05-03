@@ -1,13 +1,94 @@
 
-
-Contents of the udemt
+Contents of the udemy
 
 1) Implementation of DB
 2) Basic Routers, Viewsets and Serializers
 3) Testing, end to end and unit Testing
 4) Documentation
 
+IMPORTANT NOTES
+- The dev environment I am working on is Bash
+- Always check version of packages, especially
+  if replicating a project.
+
+- Project folder - means the project that contains the whole project
+- main project folder - means the django project folder usually pertains when
+                        you initialized the django project using django-admin
 
 
-Project description:
+*** Creating a virtual env for python
 
+$ python3 -m venv venv
+
+# python3: This specifies that Python 3
+            should be used to execute the following command.
+
+# -m venv: This tells Python to use the venv module,
+            which is a module that comes with Python for
+            creating virtual environments.
+
+# venv: This is the name of the directory
+        where the virtual environment will be created.
+        It's common to name this directory venv as well,
+        but you could name it anything you like.
+
+# Activating the env.
+$ source venv/bin/activate
+
+# Deactivating the env.
+(Make sure you are at least in the root of the proj.)
+$ deactivate
+
+* PyPI - This is a python package indexer
+
+*** pip information
+
+* pip - This is a python package installer
+
+# To install
+$ pip install {packagename}
+
+# To install from a file
+$ pip install -r {filename}.txt
+
+# To upgrade a package
+$ pip install --upgrade {packagename}
+
+# To uninstall a package
+$ pip uninstall {packagename}
+
+# To list packages that are installed
+$ pip list { packagename }
+
+# To replicate the packages that are installed and saving it.
+$ pip freeze > {filename}.txt
+
+
+*** Installation of Django
+
+# Check PyPI on how to install Django but usually it is this.
+$ pip install Django=={version}
+
+*** Starting a django project
+
+# To start a project
+$ django-admin startproject {projectname} .
+
+# django-admin - to interact with Django
+# startproject - Command to start the project
+
+# To start the django server
+$ python3 manage.py runserver
+
+*** Creating a new django application
+
+# Starting a new application
+$ python3 manage.py startapp {foldername}
+
+or
+
+$ ./manage.py startapp {foldername}
+
+# Usually creating a core app handles sub apps where you
+  create other apps such as Product app, Checkout app, Customer app etc.
+  
