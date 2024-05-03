@@ -1,0 +1,13 @@
+
+
+Contents of the udemt
+
+1) Implementation of DB
+2) Basic Routers, Viewsets and Serializers
+3) Testing, end to end and unit Testing
+4) Documentation
+
+
+
+Project description:
+
