@@ -91,4 +91,35 @@ $ ./manage.py startapp {foldername}
 
 # Usually creating a core app handles sub apps where you
   create other apps such as Product app, Checkout app, Customer app etc.
-  
+
+*** Registering Django project
+# Always register the new application that has been initialized
+  inside the main app project settings.py, You will add it in the
+  INSTALLED_APPS array
+
+
+*** Starting Django Development server
+$ ./manage.py runserver
+
+# This is only good for development but not for deployment
+# it needs other package to run when it needs to start for deployment.
+
+# Changing loopback port
+$ ./manage.py runserver {port number}
+
+*** Django Request-Response Cycle
+// Get image from udemy.
+
+*** Migration
+
+# Migrates DB changes to the server
+$ ./manage.py migrate
+
+*** Defining routes(urls)
+
+# Inside your core proj. urls.py, you can add specific paths
+  the format are usually.
+` path("{pathname}", {views})`
+
+# Including other url paths from other apps
+` path("{pathname}", include('{appname}.urls'))`
