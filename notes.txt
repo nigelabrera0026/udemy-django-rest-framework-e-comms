@@ -143,3 +143,5 @@ $ from django.core.management.utils import get_random_secret_key
 
 *** Implementing Test using Pytest
 # create a pytest.ini in the project root folder
+
+*** Serializers, it transpose django data or python objects into JSON for client side rendering
