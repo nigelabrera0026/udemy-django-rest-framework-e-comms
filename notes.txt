@@ -126,3 +126,20 @@ $ ./manage.py migrate
 
 *** installing requirements.txt from an exisiting django project
 $ pip install -r requirements.txt
+
+*** Implementing a secret key
+
+# First start the python shell
+$ python3 manage.py shell
+
+# Check django github for library sources and implement it in the
+# Python shell
+
+$ from django.core.management.utils import get_random_secret_key
+
+*** Environment Variables
+# Using dotenv for handling and managing environment Variables
+
+
+*** Implementing Test using Pytest
+# create a pytest.ini in the project root folder
