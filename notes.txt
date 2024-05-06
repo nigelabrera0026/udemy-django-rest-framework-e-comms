@@ -123,3 +123,6 @@ $ ./manage.py migrate
 
 # Including other url paths from other apps
 ` path("{pathname}", include('{appname}.urls'))`
+
+*** installing requirements.txt from an exisiting django project
+$ pip install -r requirements.txt
