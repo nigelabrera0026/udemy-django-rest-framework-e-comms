@@ -141,7 +141,24 @@ $ from django.core.management.utils import get_random_secret_key
 # Using dotenv for handling and managing environment Variables
 
 
+*** drf-spectacular
+
 *** Implementing Test using Pytest
 # create a pytest.ini in the project root folder
 
 *** Serializers, it transpose django data or python objects into JSON for client side rendering
+
+*** Creating a superuser
+$ ./manage.py createsuperuser
+
+
+
+
+*** Using DRF spectacular to control serializers and other shit
+
+# Install drf-spectacular
+$ pip install drf-spectacular
+
+# Configure base.py to initialize drf_spectacular
+# Generate the yaml file from spectacular
+$ ./manage.py spectacular --file schema.yml
