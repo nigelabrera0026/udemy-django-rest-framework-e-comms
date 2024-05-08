@@ -198,3 +198,9 @@ $ pytest --cov
 # End to End test
   - Testing the behavioral flow of the software, from start to end.
   - Those test could look like an API Endpoints
+
+
+# Most common test structure is AAA (Arrange, Act, Assert)
+# Arrange - Gathering all the resources together and isoalate the tools needed
+# Act     - Perform an action to utilize the code that we are testing
+# Assert  - Test if the outcome of the test is actually what's expected.
