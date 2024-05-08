@@ -162,3 +162,39 @@ $ pip install drf-spectacular
 # Configure base.py to initialize drf_spectacular
 # Generate the yaml file from spectacular
 $ ./manage.py spectacular --file schema.yml
+
+
+*** Running coverage for pytest
+$ coverage run -m pytest
+
+*** Installing pytest-cov and using it
+
+# To run the test for coverage
+$ coverage run -m Pytest
+
+# To generate a htmml for coverage, ( To see the what needs to be tested)
+$ coverage htmml
+
+# install pytest-coverage and to see the cli version instead of the html
+$ coverage run -m pytest
+or
+$ pytest --cov
+
+*** Testing
+
+# Unit Testing
+  - Unit test is a way of testing a unit
+  - Definition of a unit could be anything from a line of code, a function or smaller.
+  - Should  be isolated
+  - A class or function that has an expected behavioir can be tested on a unit test
+
+  # Unit test could coverage
+    - Models(Methods/Managers)
+    - URL Configurations
+    - View/Viewset
+    - Serializers
+
+
+# End to End test
+  - Testing the behavioral flow of the software, from start to end.
+  - Those test could look like an API Endpoints
